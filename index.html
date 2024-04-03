@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Page 1/halaman1.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="kiri">
+            <img src="./Sources/LOGO FIX.png" class="logo">
+            <h2 class="home">Home</h2>
+            <h2 class="myBooks"><a href="./Page 2/halaman2.html">My Books</a></h2>
+            <h2 id="Browse" onclick="toggleMenu()">
+                Browse <img src="./Sources/sort-down.png" class="browse-icon">
+                <div class="sub-menu-browse">
+                    <ul id="dropdown-browse">
+                        <li>Recommendations</li>
+                        <li>Genres</li>
+                        <li>New Releases</li>
+                        <li>News & Interviews</li>
+                        <li>Choice Awards</li>
+                    </ul>
+                    
+                </div>
+            </h2>
+            <h2 class="ReadingTracker">Reading Tracker</h2>
+        </div>
+        <div class="kanan">
+            <div class="content">
+                <div class="search-bar" id="searchBar">
+                    <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="Search your books..." 
+                    aria-label="Search"
+                    >
+                    
+                    <button class="search-submit">
+                        <img src="./Sources/loupe.png" 
+                        class="kaca"  
+                        aria-label="submit search">
+                    </button>
+                </div>
+            </div>
+            <img src="../Sources/user.png" class="user-image">
+        </div>
+    </div>
+
+    <!-- Trending Section -->
+    <div class="trending">
+        <div class="trending-atas">
+            <div class="trending-books">
+                <div class="trending-tulisan">
+                    <h1 class="trending-judul">Trending</h1>
+                    <h2 class="trending-subjudul">All the trending books are here!</h2>
+                </div>
+                <img src="./Sources/Trending/1. Laut Bercerita 1.png" draggable="false">
+                <img src="./Sources/Trending/2. Cantik Itu Luka 1.jpg" draggable="false">
+                <img src="./Sources/Trending/3. Gadis Kretek 1 .jpg" draggable="false">
+                <img src="./Sources/Trending/4. Atomic Habits 1.jpg" draggable="false">
+                <img src="./Sources/Trending/5. Crypto Trading Guide 1.webp" draggable="false">
+            </div>
+        </div>
+        <div class="trending-bawah">
+            <img src="./Sources/Trending/Rak Buku.png" class="rak-trending" draggable="false">
+            <!-- Rakk -->
+        </div>
+    </div>
+    
+    <!--Best Selling Section-->
+    <div id="best">
+
+        <div id="best-luar">
+            <div class="best-atas">
+                <h2 id="view-all" onclick="toggleDropBest()">View All</h2>
+            </div>
+            <div class="best-bawah">
+                <div class="best-bawah-kiri">
+                    <h1>Recent Best Seller</h1>
+                </div>
+                <div class="best-bawah-kanan">
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="best-luar-dropdown">
+            <div class="best-atas">
+                <h2></h2>
+            </div>
+            <div class="best-bawah">
+                <div class="best-bawah-kiri">
+                    <h1></h1>
+                </div>
+                <div class="best-bawah-kanan">
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="best-bawah">
+                <div class="best-bawah-kiri">
+                    <h1></h1>
+                </div>
+                <div class="best-bawah-kanan">
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="best-buku">
+                        <div class="buku-atas">
+                            <img src="./Sources/Best-Selling/Bintang/4,5.png" class="best-buku-bintang">
+                        </div>
+                        <div class="buku-tengah">
+                            <img src="./Sources/Best-Selling/1 The Alchemist.jpg" class="best-buku-img">
+                        </div>
+                        <div class="buku-bawah">
+                            <h2 class="best-buku-judul">The Alchemist</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Release Book Block -->
+    <div class="release-book">
+        <h1>New Release Book</h1>
+        <div class="release-book-container">
+            <img src="./Sources/New-Release/The Night of The Storm.png" class="release-book-img">
+            <img src="./Sources/New-Release/The KING SNBT.png" class="release-book-img" >
+            <img src="./Sources/New-Release/Tahun Naga Kayu.png" class="release-book-img">
+        </div>
+    </div>
+        
+
+    <!-- Quotes -->
+    <div class = "quotes">
+        <div class="quotes-kiri">
+            <img src="./Sources/Gambar-Quotes.png" class="gambar-quotes">
+        </div>
+        <div class="quotes-kanan">
+            <div class="quotes-kanan-atas">
+                <h2>“Here's to planes you missed. the tickets ripped away. and the lands left unexplored. Here's to the boxes left unopened. the keys thrown away. and the treasure left untouched.”</h2>
+            </div>
+            <div class="quotes-kanan-bawah">
+                <h2>-Helena Natasha,</h2>
+                <h3>Love, Spelled in Poetry</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Interest Based Ads</a></li>
+                        <li><a href="#">Ad Preferences</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>WORK WITH US</h4>
+                    <ul>
+                        <li><a href="#">Authors</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Authors & ads blog</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONNECT</h4>
+                    <div class="social-links">
+                        <a href="#"></a>
+                        <img src="./Sources/SourcesFooter/facebook-app-logo.png" alt="ikonfb">
+                        <img src="./Sources/SourcesFooter/twitter-logo.png" alt="ikontwit">
+                        <img src="./Sources/SourcesFooter/instagram.png" alt="ikoninsta">
+                        <img src="./Sources/SourcesFooter/linkedin.png" alt="ikonlinkedin">
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="playstore">
+                          <img src="./Sources/SourcesFooter/get-it-on-playstore.png" alt="playstore">
+                          <h2>© 2024 RakBuku, Inc. Mobile version</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+        <script src="./Page 1/halaman1.js"></script>
+    </body>
+    </html>

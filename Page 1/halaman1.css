@@ -1,0 +1,599 @@
+body{
+    height: 380vh;
+    width: 100vw;
+    margin : 0px;
+    background-color: #F5F1E7;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap:80px;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: rgba(239, 230, 212, 85);
+    background-image: url(../Sources/FixHeader.png);
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    
+}
+.kiri{
+    display: flex;
+    width: 75%;
+    height: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #551E19;
+}
+.kiri >h2{
+    font-size: 20px;
+    margin-top: 40px;
+    width: 150px;
+    text-align: center;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+.kiri>h2>a{
+    color: inherit;
+    text-decoration: none;
+}
+.logo{
+    width: 225px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: -120px;
+}
+.browse-icon{
+    width: 10px;
+}
+
+.kanan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.kanan > *{
+    margin-top: 10px;
+}
+
+.content{
+    width: 60%;
+    height: 50px;
+    display: flex;
+}
+.search-bar{
+    height: 100%;
+    width: 50px;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s ease ;
+    background-color: white;
+    overflow: hidden;
+    &:focus-within{
+        width: 100%;
+        .search-input{
+            opacity: 1;
+            cursor:text;
+        }
+    }
+}
+.search-input{
+    cursor: pointer;
+    border-radius: 15px;
+    flex-grow: 1;
+    font-size: 1rem;
+    border: 0;
+    padding:0 0.5rem ;
+    background:transparent;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    opacity: 0;
+}
+.search-input:focus{
+    outline: 0;
+}
+
+.kaca{
+    width: 30px;
+    height: auto;
+    
+}
+.search-submit{
+    cursor: pointer;
+    background: transparent;
+    border: solid transparent;
+    border-radius: 20px;
+    margin-left: auto;
+}
+
+.user-image{
+    width: 65px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+/* Dropdown */
+.sub-menu-browse{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    /* margin-left : 35px; */
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+}
+
+#dropdown-browse{
+    background-color: #CABDA5;
+    color: #551E19;
+    padding-left: 35px;
+    padding-right:10px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    font-size: 16px;
+    gap:10px;
+    /* opacity: 0; */
+}
+
+#dropdown-browse > li:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#dropdown-browse.open{
+    display: flex;
+}
+#Browse.open{
+    background-color:#CABDA5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: black; 
+    cursor: pointer; 
+}
+
+/* NAVBAR-ANIMATION */
+/* Add hover effect to h2 elements */
+.kiri > h2:hover {
+    background-color:#CABDA5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: black; 
+    cursor: pointer; 
+}
+
+/* Add hover effect to user image */
+.user-image:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+}
+
+
+
+
+/* TRENDING BAR */
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    width: 100%;
+}
+.trending-atas{
+    margin-left: 50px;
+    display: flex;
+    height: 80%;
+    gap:20px;
+    overflow-x: auto;
+}
+.trending-atas::-webkit-scrollbar{
+    display: none;
+}
+
+
+.trending-tulisan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 100px;
+    color: #551E19;
+}
+.trending-tulisan > h2{
+    color: black;
+    text-align: center;
+}
+.trending-judul{
+    font-size: 5rem;
+    margin: 0;
+}
+.trending-subjudul{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.trending-books{
+    width: 70%;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.trending-books > img{
+    width: auto;
+    height: 70%;
+}
+
+
+.trending-bawah{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rak-trending{
+    width: 100%;
+    height: auto;
+}
+
+#best{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 80%;
+}
+#best.open{
+    height: 210vh;
+}
+
+#best-luar{
+    background-color: #EEE7D5;
+    color: #551E19;
+    width: 100%;
+    height: 70vh;
+    border-radius: 8.25%;
+    /* border-top-left-radius: 8.25%; */
+    /* border-top-right-radius: 8.25%; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#best-luar-dropdown{
+    background-color: #EEE7D5;
+    color: #551E19;
+    width: 100%;
+    height: 120vh;
+    border-bottom-left-radius: 8.25%;
+    border-bottom-right-radius: 8.25%;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+#best-luar-dropdown > .best-atas
+{
+    height: 0;
+}
+#best-luar.open{
+    border-radius: 0;
+    border-top-left-radius: 8.25%;
+    border-top-right-radius: 8.25%;
+}
+#best-luar-dropdown.open
+{
+    display: flex;
+}
+
+.best-atas{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.best-atas>h2{
+    font-size: 1.75rem;
+}
+.best-atas>h2:hover{
+    color: #551F20;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.best-bawah{
+    display: flex;
+    flex-grow: 1;
+}
+.best-bawah-kiri{
+    display: flex;
+    height: 100%;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin:0;
+}
+.best-bawah-kiri>h1{
+    font-size: 2.5rem;
+    transform: rotate(-90deg);
+    flex:none;
+    padding: 0;
+    margin: 0;
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.best-bawah-kanan{
+    /* background-color: red; */
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Buku-Buku */
+.best-buku{
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buku-atas{
+    width: 100%;
+    height: 15%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+}
+.buku-tengah{
+    width: 100%;
+    height: 57.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buku-bawah{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.best-buku-bintang{
+    width: 90%;
+    height: auto;
+    /* height: 100px; */
+}
+
+.best-buku-img{
+    width: 75%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+
+/* Release-Book */
+
+.release-book{
+    height: 60vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #551E19;
+}
+
+.release-book-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.release-book-img{
+    width:30%;
+    height:auto;
+}
+
+
+
+/* Quotes */
+.quotes{
+    margin-top: 100px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 70vh;
+    width: 80%;
+}
+
+.quotes-kiri{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gambar-quotes{
+    height: 80%;
+    width: 80%;
+}
+
+.quotes-kanan{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quotes-kanan-atas{
+    height: 50%;
+    width: 100%;
+    position: relative;
+    left: -20%;
+    text-align: end;
+    color: #551E19;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+.quotes-kanan-atas > *{
+    width: 120%;
+}
+
+.quotes-kanan-bawah{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #551E19;
+    top:-40px;
+}
+
+.quotes-kanan-bawah > h2{
+    font-weight:bold;
+    font-size: 2rem;
+}
+
+.quotes-kanan-bawah > h3{
+    font-weight:900;
+    font-size: 1.2rem;
+    position: relative;
+    top:-30px;
+}
+
+/* Footer */
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: rgba(239,230,212,85);
+    background-image: url(../Sources/SourcesFooter/FOOTERFIXYEAH.jpg);
+    width: 100%;
+    /* padding: 30px 0; */
+    /* position: absolute; */
+    /* bottom: 100%; */
+    /* left: 0; */
+    /* width: 100%; */
+}
+
+.footer-col{
+    width: 25%;
+    /* padding: 0 15px; */
+}
+
+.footer-col h4{
+    font-size: 25px;
+    color: #551E19;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #551E19;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col h2{
+    font-size: 20px;
+    color:#551E19;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+    font-weight: 700;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    /* color:#551E19; */
+    display: block;
+    transition: all 0.3s ease;
+    line-height: 25px;
+}
+
+.footer-col ul li a:hover{
+    color: #551E19;
+    padding-left: 10px;
+}
+
+.playstore{
+    margin-top: 20px;
+}
+
+.playstore>img{
+    width: 250px;
+    height: auto;
+}
+
+.social-links>img{
+    width: 25px;
+    height: auto;
+    padding: 2px;
+}
