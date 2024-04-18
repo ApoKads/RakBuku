@@ -40,3 +40,7 @@ let viewBest = document.getElementById("best-luar");
         viewDropDown.classList.toggle("open");
         viewBest.classList.toggle("open");
     }
+
+function navigateTo(page) {
+    window.location.href = page;
+}

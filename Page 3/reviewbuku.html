@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reviewbuku.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="kiri">
+            <img src="./Sources/LOGO FIX.png" class="logo">
+            <h2 class="home" onclick="navigateTo('../index.html')">Home</h2>
+            <h2 class="myBooks"><a href="../Page 2/halaman2.html">My Books</a></h2>
+            <h2 id="Browse" onclick="toggleMenu()">
+                Browse <img src="./Sources/sort-down.png" class="browse-icon">
+                <div class="sub-menu-browse">
+                    <ul id="dropdown-browse">
+                        <li>Recommendations</li>
+                        <li>Genres</li>
+                        <li>New Releases</li>
+                        <li>News & Interviews</li>
+                        <li>Choice Awards</li>
+                    </ul>
+                    
+                </div>
+            </h2>
+            <h2 class="ReadingTracker">Reading Tracker</h2>
+        </div>
+        <div class="kanan">
+            <div class="content">
+                <div class="search-bar" id="searchBar">
+                    <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="Search your books..." 
+                    aria-label="Search"
+                    >
+                    
+                    <button class="search-submit" id="button-submit">
+                        <img src="./Sources/loupe.png" 
+                        class="kaca"  
+                        aria-label="submit search">
+                    </button>
+                </div>
+            </div>
+            <img src="./Sources/user.png" class="user-image">
+        </div>
+    </div>
+
+    <!-- Book Review -->
+    <div class="opinion">
+        <div class="JudulPage">Book Review</div>
+
+        <div class="review-kiel">
+            <div class="review-kiri">
+                <div class="review-kiri-atas">Book Cover</div>
+                <div class="review-kiri-bawah">
+                    <img src="./Sources/SourcesReviewKiel/2 Love, Spelled in Poetry.jpg" class="fotoReview">
+                </div>
+            </div>
+
+            <div class="review-kanan">
+                <div class="review-kanan-atas">
+                    <div class="review-kanan-kiri-atas">
+                        <p>Title</p>
+                        <p>Author</p>
+                        <p>Genre</p>
+                        <p>Year Published</p>
+                        <p>Page</p>
+                    </div>
+
+                    <div class="review-kanan-kanan-atas">
+                        <p>Love, Spelled in Poetry</p>
+                        <p>Helena Natasha</p>
+                        <p>Poetry, Love</p>
+                        <p>2019</p>
+                        <p>169 Pages</p>
+                    </div>
+                </div>
+
+                <div class="review-kanan-bawah">
+                    <div class="review-kanan-bawah-kiri">
+                        <div class="review-kanan-bawah-kiri-kiri">
+                            <p>My Rating:</p>
+                        </div>
+
+                        <div class="review-kanan-bawah-kiri-kanan"> 
+                            <!-- ini nanti untuk bintang ya -->
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                            <div id="half-stars-example">
+                                <div class="rating-group">
+                                    <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                    <label aria-label="0 stars" class="rating__label" for="rating2-0">&nbsp;</label>
+                                    <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                    <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                    <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                    <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                    <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio">
+                                    <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                    <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                    <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                    <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                    <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                    <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="review-kanan-bawah-kanan">
+                        <p>clear</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="whatuthink">
+            What do you think about this book?
+       </div>
+        
+       <div class="editable-text" contenteditable>
+            Input your opinion here...
+       </div>
+
+       <div class="ClickButton">
+            <input type="checkbox" id="CheckBox" name="OptionalCheck" value="Setuju">
+            <label for="CheckBox">Hide entire review because of spoilers</label>
+       </div>
+
+       <div class="calenderPart">
+            <div class="Calender-title1">
+                <div class="Calender-ended">
+                    <p>Date Started:</p>
+                </div>
+
+                <div class="Calender-ended">
+                    <p>Date Finished:</p>
+                </div>
+            </div>
+
+            <div class="Calender-title">
+                <!-- Calender Started -->
+                <div class="containerCalender">
+                    <div class="calendar">
+                        <header>
+                            <pre class="left">◀</pre>
+                            <div class="header-display">
+                                <p class="display">""</p>
+                            </div>
+                            <pre class="right">▶</pre>
+                        </header>
+                        
+                        <div class="week">
+                            <div>Su</div>
+                            <div>Mo</div>
+                            <div>Tu</div>
+                            <div>We</div>
+                            <div>Th</div>
+                            <div>Fr</div>
+                            <div>Sa</div>
+                        </div>
+                        
+                        <div class="days">
+                            <!--days will be filled here-->
+                        </div>
+                    </div>
+                    
+                    <div class="display-selected">
+                        <p class="selected"></p>
+                    </div>
+                </div>
+                
+                <!-- Calender Finished -->
+                <div class="containerCalender">
+                    <div class="calendar">
+                        <header>
+                            <pre class="left">◀</pre>
+                            <div class="header-display">
+                                <p class="display">""</p>
+                            </div>
+                            <pre class="right">▶</pre>
+                        </header>
+                        
+                        <div class="week">
+                            <div>Su</div>
+                            <div>Mo</div>
+                            <div>Tu</div>
+                            <div>We</div>
+                            <div>Th</div>
+                            <div>Fr</div>
+                            <div>Sa</div>
+                        </div>
+                        
+                        <div class="days">
+                            <!--days will be filled here-->
+                        </div>
+                    </div>
+                    
+                    <div class="display-selected">
+                        <p class="selected"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="SubmitButton"  onclick="toggleSubmit('../Page 2 - Copy/halaman2.html')">
+            <input type="submit" value="Submit">
+       </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Interest Based Ads</a></li>
+                        <li><a href="#">Ad Preferences</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>WORK WITH US</h4>
+                    <ul>
+                        <li><a href="#">Authors</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Authors & ads blog</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONNECT</h4>
+                    <div class="social-links">
+                        <a href="#"></a>
+                        <img src="./Sources/SourcesFooter/facebook-app-logo.png" alt="ikonfb">
+                        <img src="./Sources/SourcesFooter/twitter-logo.png" alt="ikontwit">
+                        <img src="./Sources/SourcesFooter/instagram.png" alt="ikoninsta">
+                        <img src="./Sources/SourcesFooter/linkedin.png" alt="ikonlinkedin">
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="playstore">
+                          <img src="./Sources/SourcesFooter/get-it-on-playstore.png" alt="playstore">
+                          <h2>© 2024 RakBuku, Inc. Mobile version</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./reviewbuku.js"></script>
+    <script src="./buttonSubmit.js"></script>
+</body>
+</html>

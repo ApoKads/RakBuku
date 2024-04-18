@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./halaman2.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="kiri">
+            <img src="../Sources/LOGO FIX.png" class="logo">
+            <h2 class="home"><span class="hovering-nav"><a href="../index.html">Home</a></span></h2>
+            <h2 class="myBooks"><span class="hovering-nav">My Books</span></h2>
+            <h2 id="Browse" onclick="toggleMenu()">
+                <span class="hovering-nav browsing">Browse <img src="../Sources/sort-down.png" class="browse-icon"></span>
+                <div class="sub-menu-browse">
+                    <ul id="dropdown-browse">
+                        <li>Recommendations</li>
+                        <li>Genres</li>
+                        <li>New Releases</li>
+                        <li>News & Interviews</li>
+                        <li>Choice Awards</li>
+                    </ul>
+                    
+                </div>
+            </h2>
+            <h2 class="ReadingTracker"><span class="hovering-nav-read">Reading Tracker</span></h2>
+        </div>
+        <div class="kanan">
+            <div class="content">
+                <div class="search-bar" id="searchBar">
+                    <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="Search your books..." 
+                    aria-label="Search"
+                    >
+                    
+                    <button class="search-submit">
+                        <img src="../Sources/loupe.png" 
+                        class="kaca"  
+                        aria-label="submit search">
+                    </button>
+                </div>
+            </div>
+            <img src="../Sources/user.png" class="user-image">
+        </div>
+    </div>
+
+    <!-- Container Kiri -->
+    <div class="container">
+        <div class="container-kiri">
+            <div class="container-buku-div">
+                <img src="../Sources/Best-Selling/2 Love, Spelled in Poetry.jpg" class="container-buku">
+            </div>
+
+            <div class="container-buttons">
+                <button class="WTR-container"><span class="icon-park-solid--bookmark"></span>Want To Read</button>
+                <button class="review-container" onclick="navigateTo('../Page 3/reviewbuku.html')"><span class="ph--pen-light" ></span>Write a Review</button>
+                <button class="favorite-container"><span class="ph--heart-duotone"></span>Add to Favorite</button>
+            </div>
+
+            <div class="container-user">
+                <div class="container2-user">
+                    <h3 class="container-user-text">Baby's Duckling Reading Activity</h2>
+                    <div class="container-user-tengah">
+                        <div class="container-user-profile">
+                            <img src="../Sources/page2/Profile.jpg" alt="" class="container-user-profile-img">
+                        </div>
+                        <div class="container-user-tengah-kanan">
+                            <img src="../Sources/Best-Selling/Bintang/0.png" alt="" class="container-user-tengah-kanan-bintang" id="bintang-1">
+                            <img src="../Sources/Best-Selling/Bintang/4,5.png" alt="" class="container-user-tengah-kanan-bintang2" id="bintang-2">
+                            <div class="container-user-tengah-kanan-rectangle"></div>
+                            <p class="container-user-tengah-kanan-text">0/169 pages (0%)</p>
+                        </div>
+                    </div>
+                    <p class="container-user-review-count">0 Reviews</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container Kanan -->
+        <div class="container-kanan">
+            <div class="header-buku">
+                <h1 class="judul-buku">Love, Spelled in Poetry</h1>
+                <h2 class="penulis-buku">Helena Natasha</h2>
+                <div class="rating-buku">
+                    <div class="rating-buku-bintang">
+                        <img src="../Sources/Best-Selling/Bintang/4,5.png" alt="">
+                    </div>
+                    <div class="rating-buku-rincian">
+                        <h3 class="rating-buku-bintang-text">4.66</h3>
+                        <p>207 ratings, 42 reviews</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Synopsis -->
+            <div class="synopsis">
+                <h3>Synopsis</h3>
+                <hr>
+                <p>
+                    Here's to the plane you missed,<br>
+                    the tickets ripped away,<br>
+                    and the lands left unexplored. <br>
+                    <br>
+                    Here's to the boxes left unopened, <br>
+                    the keys thrown away, <br>
+                    and the treasures left untouched. <br>
+                    <br>
+                    Here's to the 2 AM thoughts, <br>   
+                    the song of what ifs, <br>
+                    and the chances I missed. <br>
+                </p>
+            </div>
+
+            <!-- Genre Section -->
+            <div class="genre">
+                <h3>Genres</h3>
+                <hr>
+                <div class="genre-samping">
+                    <p>Poetry</p>
+                    <p>Love</p>
+                    <p>Angst</p>
+                </div>
+            </div>
+
+
+            <!-- Detail Section -->
+            <div class="details">
+                <h3>Details</h3>
+                <hr>
+                <div class="details-container">
+                    <div class="details-container-kiri">
+                        <p>Format       </p>
+                        <p>Published    </p>
+                        <p>ISBN         </p>
+                        <p>Language     </p>
+                    </div>
+                    <div class="detail-container-kanan">
+                        <p>169 pages, Hardcover</p>
+                        <p>February 11, 2019 by POP (Imprint KPG)</p>
+                        <p>9786024810986</p>
+                        <p>English</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="foto-numpuk">
+                <hr>
+                <div class="foto-numpuk-container">
+                    <div class="foto-numpuk-container-kiri">
+                        <div class="tiga-foto">
+                            <div class="pelapis-foto satu"><img src="../Sources/page2/kumpulan-foto/WW.JPG" alt=""></div>
+                            <div class="pelapis-foto"><img src="../Sources/page2/kumpulan-foto/Kiel.JPG" alt=""></div>
+                            <div class="pelapis-foto"><img src="../Sources/page2/kumpulan-foto/Fransiska Fu.JPG" alt=""></div>
+                        
+                        </div>
+                        <p>17 people are currently reading</p>
+                    </div>
+                    <div class="foto-numpuk-container-kanan">
+                        <div class="dua-foto">
+                            <div class="pelapis-foto satu"><img src="../Sources/page2/kumpulan-foto/Iven.JPG" alt=""></div>
+                            <div class="pelapis-foto"><img src="../Sources/page2/kumpulan-foto/Jojoj.JPG" alt=""></div>
+                        </div>
+                        <p>278 people want to read</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="author">
+                <div class="author-kiri">
+                    <h3>About the author</h3>
+                    <hr>
+                </div>
+                <div class="author-container">
+                    <div class="author-container-kiri">
+                        <img src="../Sources/page2/Profile Author.png" alt="">
+                        <div class="text-container-kiri">
+                            <h4>Helena Natasha</h4>
+                            <p>3 books, 7 followers</p>
+                        </div>
+                    </div>
+                    <div class="author-container-kanan">
+                        <button class="author-button">Follow</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="similiar-book">
+                <div class="similiar-book-atas">
+                    <h3>Readers who liked this book also liked :</h3>
+                </div>
+                <div class="similiar-book-bawah">
+                    <div class="similiar-book-bawah-buku">
+                        <div class="similiar-buku-atas">
+                            <img src="../Sources/SimilarBooks/Dreams, Spelled in Poetry.png" alt="">
+                        </div>
+                        <div class="similiar-buku-bawah">
+                            <h3>Dreams, Spelled in Poetry</h3>
+                            <h4>Helena Natasha</h4>
+                        </div>
+                    </div>
+                    <div class="similiar-book-bawah-buku">
+                        <div class="similiar-buku-atas">
+                            <img src="../Sources/SimilarBooks/A Starry Journal.png" alt="">
+                        </div>
+                        <div class="similiar-buku-bawah">
+                            <h3>A Starry Journal</h3>
+                            <h4>Helena Natasha</h4>
+                        </div>
+                    </div>
+                    <div class="similiar-book-bawah-buku">
+                        <div class="similiar-buku-atas">
+                            <img src="../Sources/page2/similiar/11 Alkitab.jpg" alt="">
+                        </div>
+                        <div class="similiar-buku-bawah">
+                            <h3>Alkitab</h3>
+                            <h4>Daddy J</h4>
+                        </div>
+                    </div>
+                    <div class="similiar-book-bawah-buku">
+                        <div class="similiar-buku-atas">
+                            <img src="../Sources/SimilarBooks/Di Tanah Lada.png" alt="">
+                        </div>
+                        <div class="similiar-buku-bawah">
+                            <h3>Di Tanah Lada</h3>
+                            <h4>Ziggy Zezsyazeoviennazabrizkie</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="com-review">
+                <div class="com-review-atas">
+                    <h3>Community Reviews</h3>
+                    <hr>
+                </div>
+
+                <div class="com-review-bawah">
+                    <div class="review-orang">
+                        <div class="review-orang-kiri">
+                            <img src="../Sources/page2/kumpulan-foto/Ivenila.JPG" alt="">
+                            <h4>Ivenaille</h4>
+                            <p>49 reviews <br>9 followers</p>
+                            <button>Follow</button>
+                        </div>
+                        <div class="review-orang-kanan">
+                            <div class="orang-kanan-atas">
+                                <div class="orang-kanan-atas-bintang">
+                                    <img src="../Sources/Best-Selling/Bintang/4,5.png" alt="">
+                                </div>
+                                <div class="orang-kanan-atas-tanggal">
+                                    <p>July 8, 2019</p>
+                                </div>
+                            </div>
+
+                            <div class="orang-kanan-tengah">
+                                <p>I really enjoy reading this book. This is a small book filled with short 
+                                    poetries. Not too raw, because it's wrapped with brilliant 
+                                    analogy (that actually make more senses than write it in raw conditions)
+                                     but has deep meaning and understanding of love itself.
+                                      Reading this book is like riding a journey.
+                                       When you start falling in love to a boy, hopping to a relationship, 
+                                       getting heart broken. All above just wrapped in
+                                        one small beautiful book.
+                                </p>
+                            </div>
+
+                            <div class="orang-kanan-bawah">
+                                <img src="../Sources/page2/User Interaction.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-orang">
+                        <div class="review-orang-kiri">
+                            <img src="../Sources/page2/kumpulan-foto/Kielle.JPG" alt="">
+                            <h4>Sikill</h4>
+                            <p>20 reviews <br>19 followers</p>
+                            <button>Follow</button>
+                        </div>
+                        <div class="review-orang-kanan">
+                            <div class="orang-kanan-atas">
+                                <div class="orang-kanan-atas-bintang">
+                                    <img src="../Sources/Best-Selling/Bintang/4,5.png" alt="">
+                                </div>
+                                <div class="orang-kanan-atas-tanggal">
+                                    <p>June 5, 2020</p>
+                                </div>
+                            </div>
+
+                            <div class="orang-kanan-tengah">
+                                <p>It's Suprising for me, <br>
+                                I never expected much but this book is     
+                                Absolutely beautiful for an English poetry book!
+                                I seemed to be bewitched because every page was filled with meaning.
+                                 Not too thick and very enjoyable.
+                                </p>
+                            </div>
+
+                            <div class="orang-kanan-bawah">
+                                <img src="../Sources/page2/User Interaction.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-orang">
+                        <div class="review-orang-kiri">
+                            <img src="../Sources/page2/kumpulan-foto/Laurentius.jpg" alt="">
+                            <h4>Laurentius</h4>
+                            <p>999 reviews <br>999k followers</p>
+                            <button>Follow</button>
+                        </div>
+                        <div class="review-orang-kanan">
+                            <div class="orang-kanan-atas">
+                                <div class="orang-kanan-atas-bintang">
+                                    <img src="../Sources/Best-Selling/Bintang/4,5.png" alt="">
+                                </div>
+                                <div class="orang-kanan-atas-tanggal">
+                                    <p>June 21, 2020</p>
+                                </div>
+                            </div>
+
+                            <div class="orang-kanan-tengah">
+                                <p>Surprisingly good!! <br><br>
+                                    .A real gem in the middle of Indonesia "poetry book" garbage.
+                                     I will recommend this book to my friends who like easy, sweet poetry.
+                                      Clear message, clear conflict and resolution. It's very nice.
+                                       Glad to see there's still good Indonesia contemporary poetry book noawadays :)
+                                </p>
+                            </div>
+
+                            <div class="orang-kanan-bawah">
+                                <img src="../Sources/page2/User Interaction.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pembatas">
+                        <p>Displaying 1-3 of 43 reviews</p>
+                        <div class="pembatas-bawah">
+                            <hr class="garis-kiri">
+                            <p>More reviews and ratings ></p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container-footer">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>COMPANY</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Interest Based Ads</a></li>
+                                <li><a href="#">Ad Preferences</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>WORK WITH US</h4>
+                            <ul>
+                                <li><a href="#">Authors</a></li>
+                                <li><a href="#">Advertise</a></li>
+                                <li><a href="#">Authors & ads blog</a></li>
+                                <li><a href="#">API</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>CONNECT</h4>
+                            <div class="social-links">
+                                <a href="#"></a>
+                                <img src="../Sources/SourcesFooter/facebook-app-logo.png" alt="ikonfb">
+                                <img src="../Sources/SourcesFooter/twitter-logo.png" alt="ikontwit">
+                                <img src="../Sources/SourcesFooter/instagram.png" alt="ikoninsta">
+                                <img src="../Sources/SourcesFooter/linkedin.png" alt="ikonlinkedin">
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="playstore">
+                                <img src="../Sources/SourcesFooter/get-it-on-playstore.png" alt="playstore">
+                                <h2>© 2024 RakBuku, Inc. Mobile version</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+
+    </div>
+
+    <script src="halaman2.js"></script>
+    <script src="../Page 3/buttonSubmit.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,614 @@
+body{
+    max-height: 380vh;
+    width: 100vw;
+    margin : 0px;
+    background-color: #F5F1E7;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 25px;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: rgba(239, 230, 212, 85);
+    background-image: url(./Sources/FixHeader.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    z-index: 1000;
+}
+
+.kiri{
+    display: flex;
+    width: 75%;
+    height: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #551E19;
+}
+.kiri >h2{
+    font-size: 20px;
+    margin-top: 40px;
+    width: 150px;
+    text-align: center;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+.kiri>h2>a{
+    color: inherit;
+    text-decoration: none;
+}
+.logo{
+    width: 225px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: -120px;
+}
+.browse-icon{
+    width: 10px;
+}
+
+.kanan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.kanan > *{
+    margin-top: 10px;
+}
+
+.content{
+    width: 60%;
+    height: 50px;
+    display: flex;
+}
+.search-bar{
+    height: 100%;
+    width: 50px;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s ease ;
+    background-color: white;
+    overflow: hidden;
+    &:focus-within{
+        width: 100%;
+        .search-input{
+            opacity: 1;
+            cursor:text;
+        }
+    }
+}
+.search-input{
+    cursor: pointer;
+    border-radius: 15px;
+    flex-grow: 1;
+    font-size: 1rem;
+    border: 0;
+    padding:0 0.5rem ;
+    background:transparent;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    opacity: 0;
+}
+.search-input:focus{
+    outline: 0;
+}
+
+.kaca{
+    width: 30px;
+    height: auto;
+    
+}
+.search-submit{
+    cursor: pointer;
+    background: transparent;
+    border: solid transparent;
+    border-radius: 20px;
+    margin-left: auto;
+}
+
+.user-image{
+    width: 65px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+/* Dropdown */
+.sub-menu-browse{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    /* margin-left : 35px; */
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+}
+
+#dropdown-browse{
+    background-color: #CABDA5;
+    color: #551E19;
+    padding-left: 35px;
+    padding-right:10px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    font-size: 16px;
+    gap:10px;
+    /* opacity: 0; */
+}
+
+#dropdown-browse > li:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#dropdown-browse.open{
+    display: flex;
+}
+#Browse.open{
+    background-color:#CABDA5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: black; 
+    cursor: pointer; 
+}
+
+/* NAVBAR-ANIMATION */
+/* Add hover effect to h2 elements */
+.kiri > h2:hover {
+    background-color:#CABDA5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: black; 
+    cursor: pointer; 
+}
+
+/* Add hover effect to user image */
+.user-image:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+}
+
+/* Review Book */
+@font-face {
+    font-family: myTitle;
+    src: url(./Sources/JudulPage/Alice-Regular.ttf);
+}
+
+.opinion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    max-height: 80%;
+    width: 90%;
+    font-size: x-large;
+    color: #551E19;
+    font-family: myTitle;
+}
+
+.JudulPage{
+    max-width: auto;
+    max-height: 100px;
+    /* color: #551E19; */
+    /* font-family: myTitle; */
+    font-size: 70px;
+    text-align: center;
+}
+
+/* Data Buku */
+.review-kiel{
+    display: flex;
+    flex-direction: row;
+}
+
+.review-kiri{
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+}
+
+.review-kiri-atas{
+    font-size: 25px;
+    text-align: center;
+}
+
+.review-kiri-bawah{
+    display: flex;
+    justify-content: center;
+}
+
+.fotoReview{
+    width: 70%;
+    height: auto;
+}
+
+.review-kanan{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 30px;
+}
+
+.review-kanan-atas{
+    display: flex;
+    flex-direction: row;
+}
+
+.review-kanan-kiri-atas{
+    margin-left: 5px;
+    width: 25%;
+    height: 100%
+}
+
+.review-kanan-kanan-atas{
+    margin-left: 15px;
+    opacity: 70%;
+}
+
+.review-kanan-bawah{
+    display: flex;
+    flex-direction: row;
+}
+
+.review-kanan-bawah-kiri{
+    width: 50%;
+    height: 35%;
+    background-color: #E7DFCA;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align:center;
+}
+
+.review-kanan-bawah-kiri-kiri{
+    max-width: auto;
+}
+
+.review-kanan-bawah-kanan{
+    margin-left: 15px;
+}
+
+/* Review Part */
+#half-stars-example {
+
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    .rating-group {
+      display: inline-flex;
+      margin-top: 25px;
+    }
+    
+    /* make hover effect work properly in IE */
+    .rating__icon {
+      pointer-events: none;
+    }
+    
+    /* hide radio inputs */
+    .rating__input {
+     position: absolute !important;
+     left: -9999px !important;
+    }
+  
+    /* set icon padding and size */
+    .rating__label {
+      cursor: pointer;
+      /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+      padding: 0 0.1em;
+      font-size: 2rem;
+    }
+  
+    /* add padding and positioning to half star labels */
+    .rating__label--half {
+      padding-right: 0;
+      margin-right: -1.2em;
+      z-index: 2;
+    }
+    
+    /* set default star color */
+    .rating__icon--star {
+      color: #F1CE74;
+    }
+    
+    /* set color of none icon when unchecked */
+    .rating__icon--none {
+      color: grey;
+    }
+  
+    /* if none icon is checked, make it red */
+    .rating__input--none:checked + .rating__label .rating__icon--none {
+      color: red;
+    }
+  
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked ~ .rating__label .rating__icon--star {
+      color: grey;
+    }
+    
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star,
+    .rating-group:hover .rating__label--half .rating__icon--star {
+      color: #F1CE74;
+    }
+  
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover ~ .rating__label .rating__icon--star,
+    .rating__input:hover ~ .rating__label--half .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make none icon grey on rating group hover */
+    .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+       color: #eee;
+    }
+  
+    /* make none icon red on hover */
+    .rating__input--none:hover + .rating__label .rating__icon--none {
+      color: red;
+    }
+  }
+
+.whatuthink{
+    margin-left: 75px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    max-width: 90%;
+    height: max-content;
+}
+
+.editable-text{
+    margin-left: 70px;
+    border: 1px solid #ccc;
+    background-color: #E7DFCA;
+    height: 400px;
+    width: 85%;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: x-large;
+    color: #551e19b0;
+    font-family: myTitle;
+    /* align-content: center; */
+    /* column-count: 2;
+    column-gap: 20px; */
+}
+.editable-text:focus{
+    color: #551E19;
+}
+
+.ClickButton{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 80px;
+    height: max-content;
+    width: 90%;
+    font-size: large;
+}
+
+/* Calender */
+.calenderPart{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    max-height: 890px;
+    width: 100%;
+}
+
+.Calender-title1{
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    height: 10%;
+    justify-content: space-around;
+}
+
+.Calender-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.containerCalender {
+    display: inline-block;
+    background-color:#E7DFCA;
+    border-radius: 35px;
+    padding: 0 1em;
+    /* margin-top: 2em; */
+}
+
+header {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.header-display {
+    display: flex;
+    align-items: center;
+}
+.header-displayp {
+    color:#551E19;
+    margin: 5px;
+    font-size: 1.2rem;
+    word-spacing: 0.5rem;
+}
+pre {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color:#551E19;
+}
+
+.days,
+.week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.week div,
+.days div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3em;
+    border-radius: 100%;
+}
+
+.days div:hover {
+    background: white;
+    color: #551E19;
+    cursor: pointer;
+}
+.week div {
+    opacity: 0.5;
+}
+
+.current-date {
+    background-color: var(--accent);
+    color: #551E19;
+}
+.display-selected {
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: large;
+}
+
+/* Submit Button */
+.SubmitButton{
+    margin-top: 15px;
+    padding-left: 88%;
+}
+input[type=submit]{
+    cursor: pointer;
+    background-color: white;
+    color: #551E19;
+    font-size: xx-large;
+    border-radius: 10px;
+    border-color: white;
+    font-family: myTitle;
+}
+input[type=submit]:hover {
+    background-color: #551E19;
+    color: white;
+}
+
+/* Footer */
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: rgba(239, 230, 212, 0.8);
+    background-image: url(./Sources/SourcesFooter/FOOTERFIXYEAH.jpg);
+    width: 100%;
+    /* padding: 30px 0; */
+    /* position: absolute; */
+    /* bottom: 100%; */
+    /* left: 0; */
+    /* width: 100%; */
+}
+
+.footer-col{
+    width: 25%;
+    /* padding: 0 15px; */
+}
+
+.footer-col h4{
+    font-size: 25px;
+    color: #551E19;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #551E19;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col h2{
+    font-size: 20px;
+    color:#551E19;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+    font-weight: 700;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    /* color:#551E19; */
+    display: block;
+    transition: all 0.3s ease;
+    line-height: 25px;
+}
+
+.footer-col ul li a:hover{
+    color: #551E19;
+    padding-left: 10px;
+}
+
+.playstore{
+    margin-top: 20px;
+}
+
+.playstore>img{
+    width: 250px;
+    height: auto;
+}
+
+.social-links>img{
+    width: 25px;
+    height: auto;
+    padding: 2px;
+}

@@ -270,7 +270,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: transform 0.3s ease;
+}
+.container-buttons > button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .WTR-container{
@@ -343,6 +347,18 @@ body{
 .container-user-tengah-kanan-bintang{
     height: auto;
     width: 125px;
+    /* display: none; */
+}
+.container-user-tengah-kanan-bintang.open{
+    display: none;
+}
+.container-user-tengah-kanan-bintang2.open{
+    display: block;
+}
+.container-user-tengah-kanan-bintang2{
+    height: auto;
+    width: 125px;
+    display: none;
 }
 .container-user-tengah-kanan-rectangle
 {
@@ -1043,7 +1059,9 @@ ul{
     background-color: rgba(239,230,212,85);
     background-image: url(../Sources/SourcesFooter/FOOTERFIXYEAH.jpg);
     width: 100%;
-    margin-top: 15%;
+    margin-top: 20%;
+    /* position:absolute;
+    bottom: -300%; */
 }
 
 .footer-col{

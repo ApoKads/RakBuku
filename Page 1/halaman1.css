@@ -16,7 +16,7 @@ body{
     background-color: rgba(239, 230, 212, 85);
     background-image: url(../Sources/FixHeader.png);
     background-size: cover;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -195,6 +195,7 @@ body{
 /* TRENDING BAR */
 
 .trending{
+    margin-top: 20vh;
     display: flex;
     flex-direction: column;
     height: 65vh;
@@ -260,7 +261,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 70vh;
-    width: 80%;
+    width: 87.5%;
 }
 #best.open{
     height: 210vh;
@@ -352,7 +353,6 @@ body{
 }
 
 .best-bawah-kanan{
-    /* background-color: red; */
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -360,17 +360,19 @@ body{
 
 
 
-/* Buku-Buku */
 .best-buku{
-    /* background-color: white; */
-    /* border: 1px solid black; */
     height: 100%;
     width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    /* transition: transform 0.3s ease; */
 }
+/* .best-buku:hover{
+    transform: scale(1.1);
+} */
 
 .buku-atas{
     width: 100%;
@@ -407,6 +409,11 @@ body{
     width: 75%;
     height: 100%;
     padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+.best-buku-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 
