@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="kiri">
+            <img src="../Sources/LOGO FIX.png" class="logo">
+            <h2 class="home" onclick="navigateTo('../index.html')">Home</h2>
+            <h2 class="myBooks"><a href="../MyBooks/index.html">My Books</a></h2>
+            <h2 id="Browse" onclick="toggleMenu()">
+                Browse <img src="../Sources/sort-down.png" class="browse-icon">
+                <div class="sub-menu-browse">
+                    <ul id="dropdown-browse">
+                        <li>Recommendations</li>
+                        <li>Genres</li>
+                        <li>New Releases</li>
+                        <li>News & Interviews</li>
+                        <li>Choice Awards</li>
+                    </ul>
+                    
+                </div>
+            </h2>
+            <h2 class="ReadingTracker">Reading Tracker</h2>
+        </div>
+        <div class="kanan">
+            <div class="content">
+                <div class="search-bar" id="searchBar">
+                    <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="Search your books..." 
+                    aria-label="Search"
+                    >
+                    
+                    <button class="search-submit">
+                        <img src="../Sources/loupe.png" 
+                        class="kaca"  
+                        aria-label="submit search">
+                    </button>
+                </div>
+            </div>
+            <img src="../Sources/user.png" class="user-image">
+        </div>
+    </div>
+    <div class="mybooks">
+        My Books
+    </div>
+
+        <div class="readbooks">
+            Read Books
+        </div>
+
+        <div class="rakbuku">
+            <br><img src="./assets/Logo RakBuku (45).png">
+        </div>
+
+        <div class="dream">
+            <img src="./assets/2.png">
+        </div>
+
+        <div class="love" onclick="navigateTo('../Page 2/halaman2.html')">
+            <img src="./assets/1.png">
+        </div>
+
+        <div class="holy">
+            <img src="./assets/3.png">
+        </div>
+
+        <div class="pacarnya">
+            <img src="./assets/4.png">
+        </div>
+
+        <div class="rich">
+            <img src="./assets/5.png">
+        </div>
+
+        <div class="atomic">
+            <img src="./assets/6.png">
+        </div>
+
+        <div class="currentlyreading">
+            Currently Reading
+        </div>
+        
+        <div class="rakbuku2">
+            <br><img src="./assets/Logo RakBuku (45).png">
+        </div>
+
+        <div class="alkitab">
+            <img src="./assets/7.png">
+        </div>
+
+        <div class="psychology">
+            <img src="./assets/8.png">
+        </div>
+
+        <div class="wanttoread">
+            Want To Read
+        </div>
+
+        <div class="rakbuku3">
+            <br><img src="./assets/Logo RakBuku (45).png">
+        </div>
+
+        <div class="laut">
+            <img src="./assets/9.png">
+        </div>
+
+        <div class="kita">
+            <img src="./assets/10.png">
+        </div>
+
+        <div class="satu">
+            <img src="./assets/11.png">
+        </div>
+
+        <div class="the">
+            <img src="./assets/12.png">
+        </div>
+
+        <div class="cantik">
+            <img src="./assets/13.png">
+        </div>
+ 
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Interest Based Ads</a></li>
+                        <li><a href="#">Ad Preferences</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>WORK WITH US</h4>
+                    <ul>
+                        <li><a href="#">Authors</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Authors & ads blog</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONNECT</h4>
+                    <div class="social-links">
+                        <a href="#"></a>
+                        <img src="./Sources/SourcesFooter/facebook-app-logo.png" alt="ikonfb">
+                        <img src="./Sources/SourcesFooter/twitter-logo.png" alt="ikontwit">
+                        <img src="./Sources/SourcesFooter/instagram.png" alt="ikoninsta">
+                        <img src="./Sources/SourcesFooter/linkedin.png" alt="ikonlinkedin">
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="playstore">
+                          <img src="./Sources/SourcesFooter/get-it-on-playstore.png" alt="playstore">
+                          <h2>© 2024 RakBuku, Inc. Mobile version</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./mybooks.js"></script>
+</body>
+</html>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: myTitle;
+    src: url(../Sources/Alice-Regular.ttf);
+}
+
 body{
     height: 380vh;
     width: 100vw;
@@ -9,7 +14,9 @@ body{
     align-items: center;
     gap:80px;
     overflow-x: hidden;
+    font-family: myTitle;
 }
+
 
 /* NAVBAR */
 .navbar{
@@ -149,7 +156,7 @@ body{
     flex-direction: column;
     /* justify-content: flex-start; */
     align-items: flex-start;
-    font-size: 16px;
+    font-size: 15px;
     gap:10px;
     /* opacity: 0; */
 }
@@ -221,6 +228,7 @@ body{
     width: 30%;
     margin-bottom: 100px;
     color: #551E19;
+    margin-left: 50px;
 }
 .trending-tulisan > h2{
     color: black;
@@ -480,7 +488,7 @@ body{
     left: -20%;
     text-align: end;
     color: #551E19;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     font-size: 1.2rem;
 }
 .quotes-kanan-atas > *{

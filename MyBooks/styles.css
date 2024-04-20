@@ -1,0 +1,446 @@
+@font-face {
+    font-family: myTitle;
+    src: url(../Sources/Alice-Regular.ttf);
+}
+
+body{
+    background-color: #F5F1E7;
+    font-family: myTitle;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: rgba(239, 230, 212, 85);
+    background-image: url(../Sources/FixHeader.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    z-index: 1000;
+}
+.kiri{
+    display: flex;
+    width: 75%;
+    height: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #551E19;
+}
+.kiri >h2{
+    font-size: 20px;
+    margin-top: 40px;
+    width: 150px;
+    text-align: center;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+.kiri>h2>a{
+    color: inherit;
+    text-decoration: none;
+}
+.logo{
+    width: 225px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: -120px;
+}
+.browse-icon{
+    width: 10px;
+}
+
+.kanan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.kanan > *{
+    margin-top: 10px;
+}
+
+.content{
+    width: 60%;
+    height: 50px;
+    display: flex;
+}
+.search-bar{
+    height: 100%;
+    width: 50px;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s ease ;
+    background-color: white;
+    overflow: hidden;
+    &:focus-within{
+        width: 100%;
+        .search-input{
+            opacity: 1;
+            cursor:text;
+        }
+    }
+}
+.search-input{
+    cursor: pointer;
+    border-radius: 15px;
+    flex-grow: 1;
+    font-size: 1rem;
+    border: 0;
+    padding:0 0.5rem ;
+    background:transparent;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    opacity: 0;
+}
+.search-input:focus{
+    outline: 0;
+}
+
+.kaca{
+    width: 30px;
+    height: auto;
+    
+}
+.search-submit{
+    cursor: pointer;
+    background: transparent;
+    border: solid transparent;
+    border-radius: 20px;
+    margin-left: auto;
+}
+
+.user-image{
+    width: 65px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+/* Dropdown */
+.sub-menu-browse{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    /* margin-left : 35px; */
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+}
+
+#dropdown-browse{
+    background-color: #CABDA5;
+    color: #551E19;
+    padding-left: 35px;
+    padding-right:10px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    font-size: 15px;
+    gap:10px;
+    /* opacity: 0; */
+}
+
+#dropdown-browse > li:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#dropdown-browse.open{
+    display: flex;
+}
+#Browse.open{
+    background-color:#CABDA5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: black; 
+    cursor: pointer; 
+}
+.love:hover{
+    cursor: pointer;
+}
+
+/* NAVBAR-ANIMATION */
+/* Add hover effect to h2 elements */
+.kiri > h2:hover {
+    background-color:#CABDA5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: black; 
+    cursor: pointer; 
+}
+
+/* Add hover effect to user image */
+.user-image:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+}
+
+.alice-regular {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.mybooks{
+    font-family: Alice;
+    font-size: 60px;
+    margin-top: 100px;
+    color: #551e19;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.readbooks{
+    font-family: Alice;
+    color: #551e19;
+    text-align: left;
+    margin-left: 400px;
+    font-size: 35px;
+}
+
+.currentlyreading{
+    font-family: Alice;
+    color: #551e19;
+    text-align: right;
+    margin-right: 360px;
+    font-size: 35px;
+}
+
+.wanttoread{
+    font-family: Alice;
+    color: #551e19;
+    text-align: left;
+    margin-left: 395px;
+    font-size: 35px;
+}
+
+.rakbuku, .rakbuku3{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 0;
+}
+
+.rakbuku2{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+}
+
+.rakbuku img, .rakbuku2 img, .rakbuku3 img {
+    width: 1000px;
+}
+
+.dream img{
+    position: absolute;
+    top: 494px;
+    left: 200px;
+    z-index: 1;
+    width: 7%;
+}
+
+.love img{
+    position: absolute;
+    top: 494px;
+    left: 350px;
+    z-index: 1;
+    width: 7%;
+}
+
+.holy img{
+    position: absolute;
+    top: 494px;
+    left: 500px;
+    z-index: 1;
+    width: 7%;
+}
+
+.pacarnya img{
+    position: absolute;
+    top: 693px;
+    left: 275px;
+    z-index: 1;
+    width: 7%;
+}
+
+.rich img{
+    position: absolute;
+    top: 693px;
+    left: 425px;
+    z-index: 1;
+    width: 7%;
+}
+
+.atomic img{
+    position: absolute;
+    top: 693px;
+    left: 575px;
+    z-index: 1;
+    width: 7%;
+}
+
+.alkitab img{
+    position: absolute;
+    top: 1535px;
+    left: 750px;
+    z-index: 1;
+    width: 7%;
+}
+
+.psychology img{
+    position: absolute;
+    top: 1535px;
+    left: 1050px;
+    z-index: 1;
+    width: 7%;
+}
+
+.laut img{
+    position: absolute;
+    top: 2575px;
+    left: 250px;
+    z-index: 1;
+    width: 7%;
+}
+
+.kita img{
+    position: absolute;
+    top: 2575px;
+    left: 450px;
+    z-index: 1;
+    width: 7%;
+}
+
+.satu img{
+    position: absolute;
+    top: 2575px;
+    left: 650px;
+    z-index: 1;
+    width: 7%;
+}
+
+.the img{
+    position: absolute;
+    top: 2770px;
+    left: 350px;
+    z-index: 1;
+    width: 7%;
+}
+
+.cantik img{
+    position: absolute;
+    top: 2770px;
+    left: 550px;
+    z-index: 1;
+    width: 7%;
+}
+
+/* Footer */
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: rgba(239, 230, 212, 0.8);
+    background-image: url(./Sources/SourcesFooter/FOOTERFIXYEAH.jpg);
+    width: 100%;
+    /* padding: 30px 0; */
+    /* position: absolute; */
+    /* bottom: 100%; */
+    /* left: 0; */
+    /* width: 100%; */
+}
+
+.footer-col{
+    width: 25%;
+    /* padding: 0 15px; */
+}
+
+.footer-col h4{
+    font-size: 25px;
+    color: #551E19;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #551E19;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col h2{
+    font-size: 20px;
+    color:#551E19;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+    font-weight: 700;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    /* color:#551E19; */
+    display: block;
+    transition: all 0.3s ease;
+    line-height: 25px;
+}
+
+.footer-col ul li a:hover{
+    color: #551E19;
+    padding-left: 10px;
+}
+
+.playstore{
+    margin-top: 20px;
+}
+
+.playstore>img{
+    width: 250px;
+    height: auto;
+}
+
+.social-links>img{
+    width: 25px;
+    height: auto;
+    padding: 2px;
+}
