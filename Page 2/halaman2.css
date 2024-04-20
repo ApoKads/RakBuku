@@ -260,7 +260,9 @@ body{
 .WTR-container{
     background-color: #551E19;
 }
-
+.WTR-container.open{
+    background-color: rgba(85, 30, 25, 0.5);
+}
 .review-container{
     background-color: rgba(85, 30, 25, 0.75);
 }
@@ -268,7 +270,9 @@ body{
 .favorite-container{
     background-color: rgba(85, 30, 25, 0.5);
 }
-
+.favorite-container.open{
+    background-color: rgba(85, 30, 25, 1);
+}
 .container-user{
     width: 100%;
     height: 30%;

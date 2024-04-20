@@ -58,9 +58,9 @@
             </div>
 
             <div class="container-buttons">
-                <button class="WTR-container"><span class="icon-park-solid--bookmark"></span>Want To Read</button>
+                <button class="WTR-container" id="buttonWTR" onclick="toggleWTR()"><span class="icon-park-solid--bookmark"></span><label id="labelWTR">Want To Read</label></button>
                 <button class="review-container" onclick="navigateTo('../Page 3/reviewbuku.html')"><span class="ph--pen-light" ></span>Write a Review</button>
-                <button class="favorite-container"><span class="ph--heart-duotone"></span>Add to Favorite</button>
+                <button class="favorite-container" id="buttonFav" onclick="toggleFav()"><span class="ph--heart-duotone"></span><label id="labelFav">Add to Favorite</label></button>
             </div>
 
             <div class="container-user">
@@ -331,7 +331,7 @@
 
                             <div class="orang-kanan-tengah">
                                 <p>Surprisingly good!! <br><br>
-                                    .A real gem in the middle of Indonesia "poetry book" garbage.
+                                    A real gem in the middle of Indonesia "poetry book" garbage.
                                      I will recommend this book to my friends who like easy, sweet poetry.
                                       Clear message, clear conflict and resolution. It's very nice.
                                        Glad to see there's still good Indonesia contemporary poetry book noawadays :)

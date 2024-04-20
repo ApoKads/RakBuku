@@ -233,12 +233,12 @@ body{
     flex-direction: column;
     /* border: 1px solid black; */
     position: fixed;
-    height: 80%;
+    height: 85%;
     width: 33%;
     margin-top: 120px;
 }
 .container-buku-div{
-    height: 40%;
+    height: 35%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -280,6 +280,9 @@ body{
 .WTR-container{
     background-color: #551E19;
 }
+.WTR-container.open{
+    background-color: rgba(85, 30, 25, 0.5);
+}
 
 .review-container{
     background-color: rgba(85, 30, 25, 0.75);
@@ -289,22 +292,39 @@ body{
     background-color: rgba(85, 30, 25, 0.5);
 }
 
+.favorite-container.open{
+    background-color: rgba(85, 30, 25, 1);
+}
+
 .container-user{
     width: 100%;
-    height: 30%;
+    height: 35%;
     /* background-color: red; */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* gap: 5px; */
+}
+
+.review-user{
+    width: 70%;
+    height: 30%;
+    text-align: center;
+    background-color:#E7DFCA;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container2-user{
     width: 50%;
-    height: 100%;
+    height: 62.5%;
     margin-right: 100px ;
     display: flex;
     flex-direction: column;
+    /* gap: 5px; */
 }
 
 .container-user-text{
@@ -362,7 +382,7 @@ body{
 }
 .container-user-tengah-kanan-rectangle
 {
-    background-color: rgba(85, 30, 25, 0.5);
+    background-color: rgba(85, 30, 25, 1);
     width: 120%;
     height: 20%;
 }

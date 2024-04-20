@@ -18,3 +18,27 @@ function navigateTo(page) {
     window.location.href = page;
 }
 
+let favLabel = document.getElementById("labelFav");
+let butFav = document.getElementById("buttonFav");
+
+function toggleFav() {
+    if (favLabel.textContent === "Favorited") {
+        favLabel.textContent = "Add to Favorite";
+    } else {
+        favLabel.textContent = "Favorited";
+    }
+    butFav.classList.toggle("open");
+}
+
+let labelWTR = document.getElementById("labelWTR");
+let buttonWTR = document.getElementById("buttonWTR");
+
+function toggleWTR()
+{
+    if (labelWTR.textContent === "Read") {
+        labelWTR.textContent = "Want To Read";
+    } else {
+        labelWTR.textContent = "Read";
+    }
+    buttonWTR.classList.toggle("open");
+}
