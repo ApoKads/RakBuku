@@ -256,6 +256,7 @@ body{
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
+    font-family: myTitle;
 }
 .container-buttons > button:hover{
     transform: scale(1.1);
