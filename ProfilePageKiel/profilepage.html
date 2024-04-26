@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RakBuku - Profile Page</title>
+    <link rel="stylesheet" href="./profilepage.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="kiri">
+            <img src="./Sources/LOGO FIX.png" class="logo">
+            <h2 class="home" onclick="navigateTo('../index.html')">Home</h2>
+            <h2 class="myBooks"><a href="../MyBooks/index.html">My Books</a></h2>
+            <h2 id="Browse" onclick="toggleMenu()">
+                Browse <img src="./Sources/sort-down.png" class="browse-icon">
+                <div class="sub-menu-browse">
+                    <ul id="dropdown-browse">
+                        <li>Recommendations</li>
+                        <li>Genres</li>
+                        <li>New Releases</li>
+                        <li>News & Interviews</li>
+                        <li>Choice Awards</li>
+                    </ul>
+                    
+                </div>
+            </h2>
+            <h2 class="ReadingTracker">Reading Tracker</h2>
+        </div>
+        <div class="kanan">
+            <div class="content">
+                <div class="search-bar" id="searchBar">
+                    <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="Search your books..." 
+                    aria-label="Search"
+                    >
+                    
+                    <button class="search-submit">
+                        <img src="./Sources/loupe.png" 
+                        class="kaca"  
+                        aria-label="submit search">
+                    </button>
+                </div>
+            </div>
+            <img src="./Sources/user.png" class="user-image">
+        </div>
+    </div>
+
+   <!-- Profile Page -->
+    <div class="container">
+        <div class="left-part-profile">
+            <div class="left-part-top">
+                <div class="top-left-profile">
+                    <div class="top-left-top-profile">
+                        <img src="./Sources/ProfilePageKiel/Profile-Bebek.png" class="profile-bebek">
+                    </div>
+        
+                    <div class="top-left-bot-profile">
+                        <button type="button" class="button-tracker">Reading Tracker</button>
+                    </div>
+                </div>
+        
+                <div class="top-mid-profile">
+                    <h2 class="bighead-duckling">Baby's Duckling</h2>
+                    <!-- <div class="line-mid">
+                        <hr>
+                    </div> -->
+                        
+                    <h4 class="head-duckling">Description</h2>
+                    <div class="desc-container">
+                        <p class="desc-duckling">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                        </p>
+                    </div>
+        
+                    <h4 class="head-duckling">Details</h4>
+                    <p class="details-duckling">Country     : Indonesia</p>
+                    <p class="details-duckling">Date Created: 24/09/2005</p>
+                </div>
+            </div>
+
+            <div class="left-part-mid">
+                <div class="shelves-top">
+                    <h4 class="duckling-shelves">Baby's Duckling Bookshelves</h4>
+                    <!-- <div class="line-shelves">
+                        <hr>
+                    </div> -->
+                </div>
+        
+                <div class="duckling-books">
+                    <div class="duckling-bukunya">
+                        <img src="./Sources/ProfilePageKiel/Gadis-Kretek-revisi.png" class="bukus">
+                        <img src="./Sources/ProfilePageKiel/Cantik-itu-Luka-revisi.png" class="bukus">
+                        <img src="./Sources/ProfilePageKiel/Crypto-Trading-Guide-revisi.png" class="bukus">
+                        <img src="./Sources/ProfilePageKiel/Laut-Bercerita-revisi.png" class="bukus">
+                    </div>
+        
+                    <div class="nyoba">
+                        <img src="./Sources/ProfilePageKiel/Foto-Rak.png" class="raknyoba">
+                    </div>
+                </div>
+            </div>  
+            
+            <div class="left-part-bottom">
+                <div class="left-bottom-title">
+                    <h4 class="duckling-shelves">Baby’s Duckling Recent Activity</h4>
+                    
+                    <div class="comment-container">
+                        <p class="commentP1">Baby's Duckling rated a book<img src="./Sources/ProfilePageSiska/rate-star1.png"></p>
+                        <div class="comment-buku">
+                            <div class="buku"><img src="./Sources/ProfilePageSiska/buku-1.png"></div>
+                            <div class="bagian-comment">
+                                <headJudul class="judul-buku-comment">Dreams,  Spelled in Poetry</headJudul>
+                                <p class="penulis-buku-comment">by Helena Natasha</p>
+                                <p class="isi-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            </div>
+                        </div>
+                        <p class="commentP2">Jan 09, 2024 05:56 PM</p>
+                    </div>
+
+                    <div class="comment-container">
+                        <p class="commentP1">Baby's Duckling rated a book<img src="./Sources/ProfilePageSiska/rate-star2.png"></p>
+                        <div class="comment-buku">
+                            <div class="buku"><img src="./Sources/ProfilePageSiska/buku-2.png"></div>
+                            <div class="bagian-comment">
+                                <headJudul class="judul-buku-comment">Pacarnya Boo</headJudul>
+                                <p class="penulis-buku-comment">by Abellstr25</p>
+                                <p class="isi-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            </div>
+                        </div>
+                        <p class="commentP2">Jan 09, 2024 05:56 PM</p>
+                    </div>
+
+                    <div class="view-all">View All</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-part-profile">
+            <div class="top-right-profile">
+                <div class="top-right-top">
+                    <h2 class="bighead-duckling">Books Read</h2>
+                    <img src="./Sources/ProfilePageKiel/Total-Read.png" class="total-read">
+                </div>
+                
+                <!-- <div class="line-side">
+                    <hr>
+                </div>
+     -->
+                <div class="sideton">
+                    <button type="button" class="button-side">Edit Profile</button>
+                </div>
+    
+                <h2 class="bighead-duckling">Favorite Quotes</h2>
+                
+                <!-- <div class="line-side">
+                    <hr>
+                </div> -->
+    
+                <img src="./Sources/ProfilePageKiel/Pic-Quote.png" class="pic-quote">
+                <p class="quotes">"An eye for an eye makes</p>
+                <p class="quotes">the whole world blind."</p>
+                <br>
+                <p class="quotes">- Mahatma Gandhi</p>
+                <br>
+    
+                <div class="sideton">
+                    <button type="button" class="button-side">Change</button>
+                </div>
+            </div>
+
+            <div class="right-part-bottom-judul">
+                <h2 class="bighead-duckling">Friends</h2>
+                <img src="./Sources/ProfilePageSiska/Total Friend (1).png" class="total-read2">
+            </div>
+
+            <div class="friends-row">
+                <div class="picturer"><img src="Sources/ProfilePageSiska/Iven.png"></div>
+                <div class="tulisan-part-friend">
+                    <h1 class="nama-teman">Iven Marchellia</h1>
+                    <p class="status-teman">Last Online 7 days ago</p>
+                </div>
+            </div>
+            <div class="friends-row">
+                <div class="picturer"><img src="Sources/ProfilePageSiska/jojo.png"></div>
+                <div class="tulisan-part-friend">
+                    <h1 class="nama-teman">Jonathan Tjahjana</h1>
+                    <p class="status-teman">Last Online 99 days ago</p>
+                </div>
+            </div>
+            <div class="friends-row">
+                <div class="picturer"><img src="Sources/ProfilePageSiska/kiel.png"></div>
+                <div class="tulisan-part-friend">
+                    <h1 class="nama-teman">Yehezkiel Michael</h1>
+                    <p class="status-teman">Online</p>
+                </div>
+            </div>
+            <div class="friends-row">
+                <div class="picturer"><img src="Sources/ProfilePageSiska/ww.png"></div>
+                <div class="tulisan-part-friend">
+                    <h1 class="nama-teman">William Wijaya</h1>
+                    <p class="status-teman">Last Online 3 months ago</p>
+                </div>
+            </div>
+            <div class="friends-row">
+                <div class="picturer"><img src="Sources/ProfilePageSiska/fu.png"></div>
+                <div class="tulisan-part-friend">
+                    <h1 class="nama-teman">Fransiska Fu</h1>
+                    <p class="status-teman">Online</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Interest Based Ads</a></li>
+                        <li><a href="#">Ad Preferences</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>WORK WITH US</h4>
+                    <ul>
+                        <li><a href="#">Authors</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Authors & ads blog</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONNECT</h4>
+                    <div class="social-links">
+                        <a href="#"></a>
+                        <img src="./Sources/SourcesFooter/facebook-app-logo.png" alt="ikonfb">
+                        <img src="./Sources/SourcesFooter/twitter-logo.png" alt="ikontwit">
+                        <img src="./Sources/SourcesFooter/instagram.png" alt="ikoninsta">
+                        <img src="./Sources/SourcesFooter/linkedin.png" alt="ikonlinkedin">
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="playstore">
+                          <img src="./Sources/SourcesFooter/get-it-on-playstore.png" alt="playstore">
+                          <h2>© 2024 RakBuku, Inc. Mobile version</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./profilepage.js"></script>
+</body>
+</html>
