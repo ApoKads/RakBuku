@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RakBuku - Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="kiri">
+        <img src="../Sources/LOGO FIX.png" class="logo">
+        <h2 class="home" onclick="navigateTo('../index.html')">Home</h2>
+        <h2 class="myBooks"><a href="../MyBooks/index.html">My Books</a></h2>
+        <h2 id="Browse" onclick="toggleMenu()">
+            Browse <img src="../Sources/sort-down.png" class="browse-icon">
+            <div class="sub-menu-browse">
+                <ul id="dropdown-browse" >
+                    <li>Recommendations</li>
+                    <li>Genres</li>
+                    <li>New Releases</li>
+                    <li>News & Interviews</li>
+                    <li>Choice Awards</li>
+                </ul>
+                
+            </div>
+        </h2>
+        <h2 class="ReadingTracker">Reading Tracker</h2>
+    </div>
+    <div class="kanan">
+        <div class="content">
+            <div class="search-bar" id="searchBar">
+                <input 
+                type="text" 
+                class="search-input" 
+                placeholder="Search your books..." 
+                aria-label="Search"
+                >
+                
+                <button class="search-submit">
+                    <img src="../Sources/loupe.png" 
+                    class="kaca"  
+                    aria-label="submit search">
+                </button>
+            </div>
+        </div>
+        <img src="../Sources/user.png" class="user-image">
+    </div>
+</div>
+
+  <div class="container">
+    <form id="loginForm">
+      <h2>LOGIN</h2>
+      <div class="notif">Sign in to your Account</div> <br> <br>
+      <div class="form-group">
+        <div class="icon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+          <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="form-group">
+        <div class="icon">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+          <input type="password" id="password" name="password" required>
+      </div>
+      <br>
+      <button type="submit" class="loginButton" onclick="navigateTo('../ProfilePageKiel/profilepage.html')">LOGIN</button>
+        <div class="forgot">
+        I forgot my password. Click
+        <u>here</u> 
+        to reset 
+        </div>
+      <button type="submit" class="register">REGISTER NEW ACCOUNT</button>
+    </div>
+  </form>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
