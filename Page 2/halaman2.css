@@ -4,17 +4,17 @@
 }
 
 body{
-    height: 390vh;
     width: 100vw;
+    height: 100vh;
     margin : 0px;
     background-color: #F5F1E7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:20px;
-    overflow-x: hidden;
+    gap:40px;
     font-family: myTitle;
 }
+
 
 /* NAVBAR */
 .navbar{
@@ -27,39 +27,33 @@ body{
     display: flex;
     width: 100%;
     height: 12vh;
-    z-index: 1000;
+    z-index: 999;
 }
 .kiri{
     display: flex;
-    width: 75%;
-    height: 100%;
+    width: 70%;
     gap: 30px;
-    justify-content: center;
-    align-items: center;
     color: #551E19;
 }
 .kiri >h2{
     font-size: 20px;
     margin-top: 40px;
-    width: 150px;
+    flex-grow: 1;
     text-align: center;
     transition: background-color 0.3s ease, padding 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.kiri>h2>a{
-    color: inherit;
-    text-decoration: none;
+.kiri>h2:nth-child(4){
+    gap:10px;
 }
 .kiri>h2>span>a{
     color: inherit;
     text-decoration: none;
 }
 
-.logo{
-    width: 225px;
-    height: 100px;
-    margin-top: 5px;
-    margin-left: -120px;
-}
+
 .browse-icon{
     width: 10px;
 }
@@ -129,37 +123,43 @@ body{
 
 .user-image{
     width: 65px;
-    height: auto;
     margin-right: 20px;
     margin-top: 5px;
 }
 
+#Browse{
+    position: relative;
+}
 /* Dropdown */
 .sub-menu-browse{
-    width: 180px;
-    height: 180px;
+    width: 100%;
     position: absolute;
-    top: 60px;
+    top: 4vh;
     padding: 0;
-    /* margin-left : 35px; */
     display: flex;
-    /* justify-content: flex-start; */
     align-items: flex-start;
 }
+@media screen and (max-height: 1024px) {
+    .sub-menu-browse{
+        top:2.5vh;
+    }
+}
+
 
 #dropdown-browse{
+    width: 100%;
     background-color: #CABDA5;
     color: #551E19;
-    padding-left: 35px;
-    padding-right:10px ;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 0;
+    padding-left: 1vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
     border-radius: 5px;
     display: none;
     flex-direction: column;
     /* justify-content: flex-start; */
     align-items: flex-start;
-    font-size: 15px;
+    font-size: 1vw;
     gap:10px;
     /* opacity: 0; */
 }
@@ -198,6 +198,8 @@ body{
     transform: scale(1.2);
     transition: transform 0.3s ease; 
 }
+
+
 /* Container */
 .container{
     display: grid;
@@ -215,7 +217,7 @@ body{
     position: fixed;
     height: 80%;
     width: 33%;
-    margin-top: 120px;
+    margin-top: 15vh;
 }
 .container-buku-div{
     height: 40%;
@@ -404,7 +406,7 @@ body{
 
 /* Kontainer Kanan  */
 .container-kanan{
-    margin-top: 130px   ;
+    margin-top: 20vh   ;
     /* border: 1px solid black; */
     grid-column: 2 / span 1; 
     display: flex;
