@@ -420,6 +420,13 @@ body{
     /* padding-right: 15px; */
 }
 
+.bukus{
+    transition: transform 0.3s ease;
+}
+.bukus:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
 .duckling-books{
     /* background-image: url(./Sources/ProfilePageKiel/Foto-Rak.png);
     background-repeat: no-repeat; */
@@ -460,6 +467,7 @@ body{
     font-family: myTitle;
     padding-left: 2%;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .commentP1{
