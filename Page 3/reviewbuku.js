@@ -250,3 +250,20 @@ next2.addEventListener("click", () => {
 function navigateTo(page) {
   window.location.href = page;
 }
+
+let boxAlert = document.getElementById("alerts");
+let editableTextInput = document.getElementById('edits');
+
+function toggleAlert(page) {
+    if (editableTextInput.innerText === '' || editableTextInput.innerText === 'Input your opinion here...') {
+        boxAlert.classList.add("open");
+    } else {
+        window.location.href = page;
+    }
+}
+
+function removeAlert()
+{
+  boxAlert.classList.remove("open")
+}
+

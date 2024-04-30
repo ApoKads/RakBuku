@@ -129,9 +129,9 @@
             What do you think about this book?
        </div>
         
-       <div class="editable-text" contenteditable>
-            Input your opinion here...
-       </div>
+       <div class="editable-text" id = "edits" contenteditable>
+        Input your opinion here...
+        </div>
 
        <div class="ClickButton">
             <input type="checkbox" id="CheckBox" name="OptionalCheck" value="Setuju">
@@ -214,7 +214,7 @@
             </div>
         </div>
 
-        <div class="SubmitButton"  onclick="toggleSubmit('../Page 2 - Copy/halaman2.html')">
+        <div class="SubmitButton"  onclick="toggleAlert('../Page 2 - Copy/halaman2.html')">
             <input type="submit" value="Submit">
        </div>
     </div>
@@ -264,6 +264,11 @@
             </div>
         </div>
     </footer>
+
+    <div class="alert" id="alerts">
+        <span class="closebtn" onclick="removeAlert()">&times;</span>
+        All of the form must be filled!
+    </div>
 
     <script src="./reviewbuku.js"></script>
     <script src="./buttonSubmit.js"></script>

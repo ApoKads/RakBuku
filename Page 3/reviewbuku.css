@@ -31,6 +31,76 @@ body{
     gap: 30px;
     color: #551E19;
 }
+.alert {
+    padding: 15px;
+    width: 100%;
+    background-color: #f44336;
+    color: white;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    gap:20px;
+    font-size: 1.5vw;
+    font-family: myTitle;
+  }
+
+.alert.open{
+    display: flex;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.closebtn:hover {
+    color: black;
+}
+
+.isian
+{
+    margin-left: 70px;
+    border: 1px solid #ccc;
+    background-color: #E7DFCA;
+    height: 400px;
+    width: 85%;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: x-large;
+    color: #551e19b0;
+    font-family: myTitle;
+}
+
+.editable-text{
+    margin-left: 70px;
+    border: 1px solid #ccc;
+    background-color: #E7DFCA;
+    height: 400px;
+    width: 85%;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: x-large;
+    color: #551e19b0;
+    font-family: myTitle;
+    /* align-content: center; */
+    /* column-count: 2;
+    column-gap: 20px; */
+}
+.editable-text:focus{
+    color: #551E19;
+}
+
+
+
+
 .kiri >h2{
     font-size: 20px;
     margin-top: 40px;
@@ -383,23 +453,8 @@ body{
     height: max-content;
 }
 
-.editable-text{
-    margin-left: 70px;
-    border: 1px solid #ccc;
-    background-color: #E7DFCA;
-    height: 400px;
-    width: 85%;
-    padding: 20px;
-    border-radius: 25px;
-    font-size: x-large;
-    color: #551e19b0;
-    font-family: myTitle;
-    /* align-content: center; */
-    /* column-count: 2;
-    column-gap: 20px; */
-}
-.editable-text:focus{
-    color: #551E19;
+.isian{
+
 }
 
 .ClickButton{
