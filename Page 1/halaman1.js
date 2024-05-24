@@ -34,11 +34,18 @@ function toggleMenu()
 let best = document.getElementById("best");
 let viewDropDown = document.getElementById("best-luar-dropdown");
 let viewBest = document.getElementById("best-luar");
+let view = document.getElementById("view-all");
     function toggleDropBest()
     {
         best.classList.toggle("open");
         viewDropDown.classList.toggle("open");
         viewBest.classList.toggle("open");
+        if (view.innerText === "Minimize") {
+            view.innerText = "View All";
+        } else {
+            view.innerText = "Minimize";
+        }
+    
     }
 
 function navigateTo(page) {

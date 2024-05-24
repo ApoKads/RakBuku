@@ -17,6 +17,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 /* NAVBAR */
 .navbar{
@@ -135,10 +138,11 @@ li>a{
 
 #Browse{
     position: relative;
+    width: 95px;
 }
 /* Dropdown */
 .sub-menu-browse{
-    width: 100%;
+    width: 150px;
     position: absolute;
     top: 4vh;
     padding: 0;
