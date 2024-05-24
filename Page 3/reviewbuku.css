@@ -11,6 +11,10 @@ body{
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /* NAVBAR */
 .navbar{
     background-color: rgba(239, 230, 212, 85);
