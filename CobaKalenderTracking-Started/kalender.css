@@ -10,6 +10,9 @@ body{
     gap: 25px;
     overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 /* NAVBAR */
 .navbar{
