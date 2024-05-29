@@ -24,6 +24,10 @@ body{
 }
 
 
+@font-face {
+  font-family: myTitle;
+  src: url(../Sources/Alice-Regular.ttf);
+}
 /* NAVBAR */
 .navbar{
   background-color: rgba(239, 230, 212, 85);
@@ -96,6 +100,8 @@ body{
       .search-input{
           opacity: 1;
           cursor:text;
+          background-color: transparent;
+          border: none;
       }
   }
 }
