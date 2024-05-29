@@ -61,7 +61,7 @@ form.addEventListener("submit", function(e) {
         return;
       }
     else{
-      window.open("../ProfilePageKiel/profilepage.html");
+      window.location.href ="../ProfilePageKiel/profilepage.html";
     }
 });
 
