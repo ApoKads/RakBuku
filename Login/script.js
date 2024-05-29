@@ -1,46 +1,3 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    let username = document.getElementById('username').value;
-    let password = document.getElementById('password').value;
-    if (username === 'admin' && password === 'admin') {
-      showMessage('success', 'Login successful!');
-    } else {
-      showMessage('error', 'Invalid username or password');
-    }
-  });
-  
-
-var usernameInput = document.getElementById('username');
-usernameInput.addEventListener('focus', function() {
-  if (this.value === 'Username') {
-    this.value = '';
-  }
-});
-usernameInput.addEventListener('blur', function() {
-  if (this.value === '') {
-    this.value = 'Username';
-  }
-});
-
-var passwordInput = document.getElementById('password');
-passwordInput.addEventListener('focus', function() {
-  if (this.value === 'Password') {
-    this.value = '';
-    this.type = 'password'; 
-  }
-});
-passwordInput.addEventListener('blur', function() {
-  if (this.value === '') {
-    this.value = 'Password';
-    this.type = 'text'; 
-  }
-});
-
-
-usernameInput.value = 'Username';
-passwordInput.value = 'Password';
-passwordInput.type = 'text'; 
-
 
 let subMenu = document.getElementById("dropdown-browse");
 let browse = document.getElementById("Browse");
@@ -70,3 +27,42 @@ let viewBest = document.getElementById("best-luar");
 function navigateTo(page) {
     window.location.href = page;
 }
+
+let form = document.getElementById("loginForm");
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let user = document.getElementById("username")
+  let pass = document.getElementById("password")
+  let error = document.getElementById("errorText")
+  
+  user.classList.remove("active")
+  pass.classList.remove("active")
+  error.classList.remove("active")
+  if(user.value.length < 1)
+    {
+      error.innerText = "Username Must Be Filled"
+      user.classList.add("active")
+      error.classList.add("active")
+      return;
+    }
+  else if(!user.value.endsWith("@rakbuku.com"))
+    {
+      error.innerText = "Username Must End With '@rakbuku.com'"
+      user.classList.add("active")
+      error.classList.add("active")
+      return;
+    }
+  else if(pass.value.length < 1)
+      {
+        error.innerText = "Password Must Be Filled"
+        pass.classList.add("active")
+        error.classList.add("active")
+        return;
+      }
+    else{
+      window.open("../ProfilePageKiel/profilepage.html");
+    }
+});
+
+

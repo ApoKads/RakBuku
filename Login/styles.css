@@ -323,7 +323,28 @@ u:hover{
   font-size: 15px;
   padding-left: 35px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
+#username.active{
+  /* border: 1px solid red; */
+  border-bottom: 4px solid red;
+  background-color: pink;
+}
+#errorText{
+  color: red;
+  margin-bottom: 20px;
+  font-size: 1.2vw;
+  display: none;
+}
+#errorText.active{
+  display: block;
+}
+#password.active{
+  border-bottom: 4px solid red;
+  background-color: pink;
+}
 #username::placeholder {
   color: #8C7154; 
   font-family: 'Alice', sans-serif; 
